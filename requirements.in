@@ -1,0 +1,7 @@
+transformers
+datasets
+tqdm
+numpy
+matplotlib
+stableset
+stopwords
