@@ -3,5 +3,5 @@ datasets
 tqdm
 numpy
 matplotlib
-stableset
-stopwords
+jinja2
+numba
