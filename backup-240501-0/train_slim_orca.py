@@ -29,7 +29,7 @@ OPEN_ORCA_SLIM_ORCA_ROLES_MAP = {
 }
 
 
-def tokenizer_encode_conversation(cs: list[dict[str, str]]) -> list[int]:    
+def tokenizer_encode_conversations(cs: list[dict[str, str]]) -> list[int]:    
     messages: list[dict[str, str]] = [
         {
             'role': OPEN_ORCA_SLIM_ORCA_ROLES_MAP[c['from']],
@@ -49,7 +49,7 @@ def create_markov_chain_transition_matrix_from_open_orca_slim_orca_dataset() -> 
     
     for n in tqdm(ds['train']):
         cs: list[dict[str, str]] = n['conversations']
-        tokens_ids: list[int] = tokenizer_encode_conversation(cs)
+        tokens_ids: list[int] = tokenizer_encode_conversations(cs)
 
         for i in range(0, len(tokens_ids) - 1):
             curr_token = tokens_ids[i]
