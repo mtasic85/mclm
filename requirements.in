@@ -1,8 +1,7 @@
-transformers
-datasets
 tqdm
-pqdm
 numpy
-matplotlib
 jinja2
-numba
+usearch
+datasets
+transformers
+jsonlines

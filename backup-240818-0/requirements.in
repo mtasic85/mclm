@@ -1,0 +1,8 @@
+transformers
+datasets
+tqdm
+pqdm
+numpy
+matplotlib
+jinja2
+numba
